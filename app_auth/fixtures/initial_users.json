@@ -1,0 +1,14 @@
+[
+  {
+    "model": "app_auth.customuser",
+    "pk": 1,
+    "fields": {
+      "email": "admin@localhost",
+      "first_name": "Admin",
+      "last_name": "Admin",
+      "password": "pbkdf2_sha256$150000$yD7Kj8OxO1Om$9SYiMUGapQq3j6k+/w6ymhWh6y4K7cTh0l0xsw7XuF4=",
+      "is_superuser": true,
+      "is_active": true
+    }
+  }
+]
