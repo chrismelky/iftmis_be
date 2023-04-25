@@ -3,8 +3,11 @@ import json
 from oauth2_provider.views import TokenView
 from oauth2_provider.models import AccessToken
 from django.http.response import HttpResponse
+from django.utils.decorators import method_decorator
+from django.views.decorators.debug import sensitive_post_parameters
 
 
+@method_decorator(sensitive_post_parameters("password"))
 class CustomAuthResponse(TokenView):
     def post(self, request, *args, **kwargs):
         response = super().post(request, *args, **kwargs)
